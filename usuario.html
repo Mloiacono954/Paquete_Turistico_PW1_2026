@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luma - Paquetes turísticos</title>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
-    <!-- Va primero en el body para poder usarlo con CSS después -->
     <input type="checkbox" id="tema">
     <label for="tema">Tema oscuro</label>
 
@@ -30,7 +28,6 @@
     <main>
         <h1>Paquetes turísticos</h1>
 
-        <!-- Van antes de la sección de paquetes, por lo mismo que el tema -->
         <input type="radio" name="vista" id="vista-tarjetas" checked>
         <label for="vista-tarjetas">Tarjetas</label>
         <input type="radio" name="vista" id="vista-lista">
@@ -39,6 +36,7 @@
         <section>
 
             <article>
+                <!--aca despues vemos bien que imagenes ponemos-->
                 <img src="./Imagenes/bariloche.jpg" alt="Lago y montañas en Bariloche" width="300">
                 <h2>Bariloche</h2>
                 <p>Siete días entre lagos y montañas, con excursión al Cerro Catedral.</p>
@@ -52,6 +50,7 @@
             </article>
 
             <article>
+                <!--aca tambien despues vemos bien que imagenes ponemos-->
                 <img src="./Imagenes/iguazu.jpg" alt="Cataratas del Iguazú" width="300">
                 <h2>Cataratas del Iguazú</h2>
                 <p>Cinco días recorriendo las cataratas desde ambos lados.</p>
@@ -65,6 +64,7 @@
             </article>
 
             <article>
+                <!--vemos-->
                 <img src="./Imagenes/cancun.jpg" alt="Playa en Cancún" width="300">
                 <h2>Cancún</h2>
                 <p>Diez días all inclusive frente al mar Caribe.</p>
@@ -78,6 +78,7 @@
             </article>
 
             <article>
+                <!--vemos-->
                 <img src="./Imagenes/mendoza.jpg" alt="Viñedos en Mendoza" width="300">
                 <h2>Mendoza</h2>
                 <p>Cuatro días de bodegas, degustaciones y cordillera.</p>
@@ -94,8 +95,16 @@
     </main>
 
     <footer>
-        <p>© Luma – Trabajo práctico</p>
-    </footer>
+    <h2>Contacto</h2>
+    <ul>
+        <li>Email: <a href="mailto:contacto@luma.com">contacto@luma.com</a></li>
+        <li>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></li>
+        <li>WhatsApp: <a href="https://wa.me/541112345678">+54 11 1234-5678</a></li>
+        <li>Dirección: Av. Corrientes 1234, CABA</li>
+        <li>Horario: Lunes a Viernes de 9 a 18 h</li>
+    </ul>
+    
+</footer>
 
 </body>
 </html>
