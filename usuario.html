@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma - Paquetes turísticos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Va primero en el body para poder usarlo con CSS después -->
+    <input type="checkbox" id="tema">
+    <label for="tema">Tema oscuro</label>
+
+    <header>
+        <img src="./Imagenes/logo.jpg"
+            alt="Luma - Viajes que empiezan antes de partir"
+            width="300">
+        <p>Viajes que comienzan antes de partir.</p>
+
+        <nav>
+            <a href="usuario.html">Catálogo</a>
+            <a href="mi-cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="admin.html">Cambiar a Administrador</a>
+            <a href="index.html">Cerrar sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Paquetes turísticos</h1>
+
+        <!-- Van antes de la sección de paquetes, por lo mismo que el tema -->
+        <input type="radio" name="vista" id="vista-tarjetas" checked>
+        <label for="vista-tarjetas">Tarjetas</label>
+        <input type="radio" name="vista" id="vista-lista">
+        <label for="vista-lista">Lista</label>
+
+        <section>
+
+            <article>
+                <img src="./Imagenes/bariloche.jpg" alt="Lago y montañas en Bariloche" width="300">
+                <h2>Bariloche</h2>
+                <p>Siete días entre lagos y montañas, con excursión al Cerro Catedral.</p>
+                <ul>
+                    <li>Duración: 7 días</li>
+                    <li>Precio: $ 650.000</li>
+                </ul>
+                <input type="checkbox" id="fav-bariloche">
+                <label for="fav-bariloche">Favorito</label>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="./Imagenes/iguazu.jpg" alt="Cataratas del Iguazú" width="300">
+                <h2>Cataratas del Iguazú</h2>
+                <p>Cinco días recorriendo las cataratas desde ambos lados.</p>
+                <ul>
+                    <li>Duración: 5 días</li>
+                    <li>Precio: $ 480.000</li>
+                </ul>
+                <input type="checkbox" id="fav-iguazu">
+                <label for="fav-iguazu">Favorito</label>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="./Imagenes/cancun.jpg" alt="Playa en Cancún" width="300">
+                <h2>Cancún</h2>
+                <p>Diez días all inclusive frente al mar Caribe.</p>
+                <ul>
+                    <li>Duración: 10 días</li>
+                    <li>Precio: $ 1.900.000</li>
+                </ul>
+                <input type="checkbox" id="fav-cancun">
+                <label for="fav-cancun">Favorito</label>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="./Imagenes/mendoza.jpg" alt="Viñedos en Mendoza" width="300">
+                <h2>Mendoza</h2>
+                <p>Cuatro días de bodegas, degustaciones y cordillera.</p>
+                <ul>
+                    <li>Duración: 4 días</li>
+                    <li>Precio: $ 390.000</li>
+                </ul>
+                <input type="checkbox" id="fav-mendoza">
+                <label for="fav-mendoza">Favorito</label>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© Luma – Trabajo práctico</p>
+    </footer>
+
+</body>
+</html>
