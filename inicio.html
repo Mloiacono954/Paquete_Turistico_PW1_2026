@@ -7,7 +7,11 @@
 </head>
 
 <body>
-
+    <input type="checkbox" id="tema">
+    <label for="tema">Tema oscuro</label>
+        <input type="checkbox" id="tema">
+    <label for="tema">Tema claro</label>
+    
     <header>
         <img src="./Imagenes/logo.jpg" 
             alt="Luma - Viajes que empiezan antes de partir"
@@ -21,7 +25,7 @@
         <section>
             <h1>Iniciar sesión</h1>
 
-            <form method="post">
+            <form method="post" action="usuario.html">
 
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="username" required>
@@ -31,24 +35,31 @@
                 <input type="password" id="contrasena" name="password" required>
                 <br>
                 <br>
-                <button type="submit">Ingresar/ aca va a ir el href que lleve a la otra pagina</button> 
+                <button type="submit">Ingresar</button> 
             </form>
         </section>
         <section>
             <h2>¿Primera vez en Luma?</h2>
             <p>
-                Todavía no existe un usuario con perfil Administrador.
-                Para comenzar, es necesario crear el primer administrador.
+                Todavía no existe un usuario.
+                Para comenzar, es necesario crear el primer usuario.
             </p>
-            <a href="crearAdmin.html">
-                Crear primer administrador
-            </a>
+            <a href="crearUsuario.html">
+                Crear primer usuario</a>
         </section>
 
     </main>
 
     <footer>
-
+<h2>Contacto</h2>
+    <ul>
+        <li>Email: <a href="mailto:contacto@luma.com">contacto@luma.com</a></li>
+        <li>Teléfono: <a href="tel:+541112345678">+54 11 1234-5678</a></li>
+        <li>WhatsApp: <a href="https://wa.me/541112345678">+54 11 1234-5678</a></li>
+        <li>Dirección: Av. Corrientes 1234, CABA</li>
+        <li>Horario: Lunes a Viernes de 9 a 18 h</li>
+    </ul>
+    
     </footer>
 
 </body>
